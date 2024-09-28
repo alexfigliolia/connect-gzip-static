@@ -1,6 +1,6 @@
 {
-  "name": "connect-gzip-static",
-  "version": "4.1.0",
+  "name": "@figliolia/static-compression",
+  "version": "1.0.0",
   "description": "gzip/brotli static middleware for connect - serves compressed files if they exist, falls through to connect-static if they don't",
   "main": "dist/cjs/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pirxpilot/connect-gzip-static.git"
+    "url": "git+https://github.com/alexfigliolia/connect-gzip-static.git"
   },
   "keywords": [
     "connect",
@@ -20,7 +20,7 @@
     "brotli",
     "compress"
   ],
-  "author": "Damian Krzeminski <pirxpilot@furkot.com>",
+  "author": "Alex Figliolia",
   "license": "MIT",
   "engines": {
     "node": ">= 20.1.0"
@@ -68,5 +68,8 @@
     }
   },
   "module": "dist/mjs/index.js",
-  "types": "dist/types/index.d.ts"
+  "types": "dist/types/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  }
 }

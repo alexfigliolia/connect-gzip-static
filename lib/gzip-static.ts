@@ -8,7 +8,7 @@ import send, { mime } from "send";
 import type { ServeStaticOptions } from "serve-static";
 import serve from "serve-static";
 
-const debug = Debug("connect:gzip-static");
+const debug = Debug("connect:static-compression");
 
 function setHeader(res: ServerResponse, path: string, encoding: string) {
   const type = mime.lookup(path);

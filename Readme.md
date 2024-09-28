@@ -14,7 +14,11 @@ gzip].
 
 ## Installation
 
-	  $ npm install connect-gzip-static
+```bash
+npm install @figliolia/static-compression
+# or
+yarn add @figliolia/static-compression
+```
 
 ## Options
 
@@ -25,14 +29,14 @@ options as you would with [connect static].
 ## Usage
 
 ```javascript
-var gzipStatic = require('connect-gzip-static');
-var oneDay = 86400000;
+import staticCompression from 'connect-gzip-static';
+const oneDay = 86400000;
 
 connect()
-  .use(gzipStatic(__dirname + '/public'))
+  .use(staticCompression(__dirname + '/public'))
 
 connect()
-  .use(gzipStatic(__dirname + '/public', { maxAge: oneDay }))
+  .use(staticCompression(__dirname + '/public', { maxAge: oneDay }))
 ```
 
 ## How it works
@@ -48,24 +52,4 @@ handle it.
 
 This project uses [debug] module. To enable the debug log, just set the debug enviromental variable:
 
-    DEBUG="connect:gzip-static"
-
-# License
-
-MIT © [Damian Krzeminski](https://pirxpilot.me)
-
-[brotli]: https://en.wikipedia.org/wiki/Brotli
-[debug]: https://github.com/visionmedia/debug
-[connect]: https://github.com/senchalabs/connect
-[connect static]: https://github.com/expressjs
-[compression]: https://github.com/expressjs/compression
-[connect gzip]: https://github.com/tikonen/connect-gzip
-
-[npm-image]: https://img.shields.io/npm/v/connect-gzip-static
-[npm-url]: https://npmjs.org/package/connect-gzip-static
-
-[build-url]: https://github.com/pirxpilot/connect-gzip-static/actions/workflows/check.yaml
-[build-image]: https://img.shields.io/github/actions/workflow/status/pirxpilot/connect-gzip-static/check.yaml?branch=main
- 
-[deps-image]: https://img.shields.io/librariesio/release/npm/connect-gzip-static
-[deps-url]: https://libraries.io/npm/connect-gzip-static
+    DEBUG="connect:static-compression"
