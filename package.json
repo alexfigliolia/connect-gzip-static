@@ -1,6 +1,6 @@
 {
   "name": "@figliolia/static-compression",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gzip/brotli static middleware for connect - serves compressed files if they exist, falls through to connect-static if they don't",
   "main": "dist/cjs/index.js",
   "scripts": {
