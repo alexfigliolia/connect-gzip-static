@@ -1,7 +1,3 @@
-[![NPM version][npm-image]][npm-url]
-[![Build Status][build-image]][build-url]
-[![Dependency Status][deps-image]][deps-url]
-
 # connect-gzip-static
 
 Middleware for [connect]: serves compressed files if they exist, falls through to connect-static
